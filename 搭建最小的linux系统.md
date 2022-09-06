@@ -8,13 +8,6 @@
 
 系统环境为ubuntu-22.04
 
-首先创建一个工作目录并进入到此目录
-
-```shell
-mkdir ~/minlinux
-cd ~/minlinux
-```
-
 ## 1、安装必要的软件包
 
 更新本地仓库
