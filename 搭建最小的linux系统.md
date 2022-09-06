@@ -58,7 +58,7 @@ cd work
 
 a、直接下载linux内核的源码，并解压，网址如下：
 
-[The Linux Kernel Archives](The Linux Kernel Archives)
+[The Linux Kernel Archives](https://www.kernel.org/)
 
 b、通过git克隆整个仓库
 
