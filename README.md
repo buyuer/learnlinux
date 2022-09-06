@@ -13,3 +13,5 @@ docker build -t learnlinux:latest .
 ## 目录
 
 [1、搭建最小的linux系统](./搭建最小的linux系统.md)
+
+[2、在busybox中添加applet](./在busybox中添加applet.md)
