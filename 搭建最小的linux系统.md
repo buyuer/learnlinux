@@ -189,7 +189,7 @@ sudo mkdir etc dev home root proc sys mnt
 sudo umount rootfs
 ```
 
-## 6、运行最小系统
+## 7、运行最小系统
 
 ```shell
 qemu-system-x86_64 -kernel ./linux/arch/x86_64/boot/bzImage -hda ./rootfs.img -append "root=/dev/sda console=ttyS0" -nographic
