@@ -2,11 +2,13 @@
 
 [主仓库：https://github.com/buyuer/learnlinux](https://github.com/buyuer/learnlinux)
 
+我们总说linux系统，但到底什么是linux系统？linux系统到底长什么样子？
 
-
-一个操作系统宏观上分为两个部分，kernel和shell（核和壳），kernel就是操作系统内核，shell在kernel之上，提供用户界面。只有kernel，不能算作一个操作系统，因为什么也做不了。本文通过linux内核和busybox工具集，制作一个最简单的linux系统。
+一个操作系统宏观上分为两个部分，kernel和shell（核和壳），kernel就是操作系统内核，shell在kernel之上，提供与用户交互的界面，包括CLI（命令行界面）和GUI（图形用户界面）。除此之外还有基础运行库（如c库、posix）等基础软件。只有kernel，不能算作一个操作系统，因为什么也做不了。本文通过linux内核和busybox工具集，制作一个最简单的linux系统。（不需要任何开发板，我们使用模拟器来运行）
 
 系统环境为ubuntu-22.04
+
+（wsl2和docker环境也是可以的）
 
 ## 1、安装必要的软件包
 
@@ -167,7 +169,7 @@ sudo mount -t ext4 -o rw rootfs.img ./rootfs
 
 安装文件系统到rootfs目录下
 
-（因为根目录下的目录默认都是root用户，所以我们需要用root权限创建，避免权限问题注意这里使用root权限问题）
+（注意这里使用root权限创建，因为根目录下的目录默认都是root用户所有，所以我们需要用root权限创建，避免权限问题）
 
 ```shell
 sudo make -C busybox install CONFIG_PREFIX=../rootfs
@@ -190,6 +192,8 @@ sudo umount rootfs
 ```
 
 ## 7、运行最小系统
+
+现在我们有了一个kernal和可以提供shell的文件系统，就可以搭建一个操作系统了，并使用qemu来模拟运行，最终进入到命令行界面。（qemu是一个开源的模拟处理器软件）
 
 ```shell
 qemu-system-x86_64 -kernel ./linux/arch/x86_64/boot/bzImage -hda ./rootfs.img -append "root=/dev/sda console=ttyS0" -nographic
