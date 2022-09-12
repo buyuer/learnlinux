@@ -154,5 +154,6 @@ PS：修改后的busybox已经push到github上我自己fork的仓库里了，分
 clone好后，切换到my分支
 
 ```shell
-git switch my
+git switch my    // for git 2.23 and above
+or git checkout my
 ```
