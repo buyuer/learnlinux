@@ -1,6 +1,6 @@
 # learnlinux
 
-linux学习教程，一边学一边更新
+linux学习记录，一边学一边更新
 
 可以使用仓库中的dockerfile构建学习环境的镜像，克隆本仓库，并在仓库目录运行
 
@@ -21,3 +21,19 @@ docker build -t learnlinux:latest .
 [2、在busybox中添加applet](./mds/在busybox中添加applet.md)
 
 [3、添加linux系统调用](./mds/添加linux系统调用.md)
+
+## 学习linux的网站
+
+1、官方文档： [https://www.kernel.org/doc/](https://www.kernel.org/doc)
+
+2、手册：[https://kernel.org/doc/man-pages/](https://kernel.org/doc/man-pages/)、[https://man7.org/](https://man7.org/)
+
+3、POSIX程序员指南：[https://maxim.int.ru/bookshelf/OReilly__POSIX_Programmers_Guide.pdf](https://maxim.int.ru/bookshelf/OReilly__POSIX_Programmers_Guide.pdf)
+
+4、LINUX程序员指南：[https://tldp.org/LDP/lpg-0.4.pdf](https://tldp.org/LDP/lpg-0.4.pdf)
+
+5、内核文档：[https://docs.kernel.org/](https://docs.kernel.org/)
+
+6、POSIX官网：[http://get.posixcertified.ieee.org/](http://get.posixcertified.ieee.org/)
+
+7、linux教程和指南：[https://www.baeldung.com/linux/](https://www.baeldung.com/linux/)
