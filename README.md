@@ -22,6 +22,8 @@ docker build -t learnlinux:latest .
 
 [3、添加linux系统调用](./mds/添加linux系统调用.md)
 
+[4、使用clion阅读编辑linux源码](./mds/使用clion阅读编辑linux源码.md)
+
 ## 学习linux的网站
 
 1、官方文档： [https://www.kernel.org/doc/](https://www.kernel.org/doc)
