@@ -2,7 +2,7 @@
 
 [主仓库：https://github.com/buyuer/learnlinux](https://github.com/buyuer/learnlinux)
 
-在[搭建最小的linux系统](./搭建最小的linux系统.md)一文中，我们成功搭建了一个非常简单但是可以运行的操作系统，我们使用busybox构建了基础的文件系统，其中包含了busybox提供的一些基本命令，如ls、cd、sh等，在busybox中，这些命令程序成为applet。那么如何在我们自己的系统里运行我们自己命令程序？本文将在busybox添加我们自己编写的hello applet。
+在[搭建最小的linux系统](./搭建最小的linux系统.md)一文中，我们成功搭建了一个非常简单但是可以运行的操作系统，我们使用busybox构建了基础的文件系统，其中包含了busybox提供的一些基本命令，如ls、cd、sh等，在busybox中，这些命令程序称为applet。那么如何在我们自己的系统里运行我们自己命令程序？本文将在busybox添加我们自己编写的hello applet。
 
 ## 1、创建目录和源文件
 
